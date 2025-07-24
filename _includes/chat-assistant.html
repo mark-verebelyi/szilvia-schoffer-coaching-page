@@ -1,0 +1,14 @@
+<div id="decodingdenmark-chat-widget" style="margin: 40px 0; text-align: center;"></div>
+<script src="https://chat-assistant-ui.decoding-denmark.workers.dev/assets/widget.iife.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.DecodingDenmarkChat) {
+      window.DecodingDenmarkChat.init({
+        containerId: 'decodingdenmark-chat-widget',
+        baseUrl: 'https://chat-assistant-ui.decoding-denmark.workers.dev' 
+      });
+    } else {
+      console.error('Chat widget failed to load');
+    }
+  });
+</script>
